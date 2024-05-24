@@ -1,0 +1,183 @@
+---
+// import '../../styles/variables.scss';
+import envelopeIcon from "../../images/contact-envelope.png";
+---
+
+<header>
+    <div class="container row site-header">
+      <div class="site-title-wrapper">
+        <a class="site-title-link" href="/">
+          <svg id="svg-circles" width="25px" class="header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+            <circle class="circle" cx="18" cy="18" r="18" style="fill:#fff"></circle>
+            <circle class="circle" cx="18" cy="18" r="12.4" style="fill:none;stroke:#00455c;stroke-miterlimit:10;stroke-width:4px"></circle>
+            <circle class="circle" cx="18" cy="18" r="7.01" style="fill:none;stroke:#00455c;stroke-miterlimit:10"></circle>
+            <path class="star" d="M25.4,27.5L18.3,24l-7,3.9l1.2-7.9l-5.9-5.3l7.9-1.4l3.3-7.2l3.7,7l7.9,0.9l-5.6,5.7L25.4,27.5z" fill="#00455c"></path>
+          </svg>
+          <h1 class="site-title"><span class="show-for-sr">Cincinnati Freelance Web Developer, Craig Rahtz at </span>rahtz.net</h1>
+        </a>
+      </div>
+      <div class="column">
+        <div class="vertical-center-container">
+          <nav>
+            <ul>
+              <li class="menu-item"><a href="/about-craig-rahtz">About Me</a></li>
+              <li class="menu-item"><a href="/services">Services</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="column">
+        <div class="vertical-center-container">
+          <a href="/contact-craig" class="contact-container">
+            <img class="contact-icon" src={envelopeIcon.src} alt="contact icon" />
+            <span class="contact-me">Contact Me</span>
+          </a>
+        </div>
+      </div>
+    </div>
+</header>
+<!-- 
+<style lang="scss" scoped>
+  .site-title-wrapper {
+    width: 100%;
+    max-width: 20rem;
+    height: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .site-title {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .site-title-link {
+    #svg-circles {
+      display: inline-block;
+      vertical-align: middle;
+  
+      &.header {
+        height: 2.5em;
+        width: 2.5em;
+        margin-right: 0.3em;
+      }
+  
+      &.footer {
+        width: 1.6em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+  
+      .circle {
+        transition: 1s all;
+      }
+  
+      .star {
+        transform-origin: center;
+        transition: 0.7s all;
+        transform: scale(0) translate(100%, 100%) rotateZ(0);
+      }
+    }
+  
+    &:hover,
+    &:focus {
+      #svg-circles {
+        .circle {
+          r: 16px;
+        }
+  
+        .star {
+          transform: scale(1) translate(0, 0) rotateZ(360deg);
+        }
+      }
+    }
+  }
+  nav {
+    color: var(--cyprus);
+  }
+  nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-weight: 700;
+  }
+  .menu-item {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .menu-item::before {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0rem;
+    display: block;
+    background-color: var(--flamingo);
+    content: "";
+    z-index: 1;
+    transition: 0.25s all;
+  }
+  .menu-item:hover::before,
+  .menu-item:focus::before {
+    height: 0.7rem;
+  }
+  .menu-item.active:hover::before,
+  .menu-item.active:focus::before {
+    height: 0rem;
+  }
+  .contact-container {
+    text-align: right;
+  }
+  .contact-icon {
+    width: 33px;
+    height: auto;
+    display: inline-block;
+    top: 3px;
+    margin-right: 8px;
+    position: relative;
+    transition: 0.35s;
+  }
+  .contact-container:hover,
+  .contact-container:focus {
+    .contact-icon {
+      margin-right: 4px;
+    }
+  }
+  
+  .contact-me {
+    color: var(--flamingo);
+    font-weight: 700;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .site-title-wrapper {
+      max-width: 14rem;
+      height: auto;
+      padding-top: 1rem;
+    }
+    .site-header {
+      align-items: center;
+    }
+    .contact-container {
+      margin-bottom: 1rem;
+    }
+    nav > ul {
+      justify-content: center;
+    }
+    .menu-item {
+      margin-left: 1.5rem;
+    }
+    .contact-container {
+      text-align: center;
+    }
+    .menu-item:hover::before,
+    .menu-item:focus::before {
+      height: 0;
+    }
+  }
+  </style> -->

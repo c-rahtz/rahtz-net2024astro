@@ -1,16 +1,20 @@
 ---
+import BasePageLayout from "../layouts/BasePageLayout.astro";
+import HomeHeroSection from "../components/homepage/HomeHeroSection.astro";
+import HomeServicesSection from "../components/homepage/HomeServicesSection.astro";
+import HomeClientsSection from "../components/homepage/HomeClientsSection.astro";
+import HomeContactSection from "../components/homepage/HomeContactSection.astro";
 
+const pageTitle = "Freelance Web Developer, Craig Rahtz"
+const metaDescription = "A freelance web developer working in Cincinnati, Ohio. Professional front-end development and back-end support."
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BasePageLayout pageTitle={pageTitle} metaDescription={metaDescription}>
+		<HomeHeroSection />
+		<main>
+			<HomeServicesSection />
+			<HomeClientsSection />
+			<HomeContactSection />
+		</main>
+</BasePageLayout>
+

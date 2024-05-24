@@ -1,0 +1,26 @@
+---
+const thisYear = new Date().getFullYear()
+---
+
+<footer id="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="column column-33 footer-column-left">
+          <a href="/" id="footer-name" class="footer-column-header">
+            <svg id="svg-circles-footer" class="header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+              <circle class="circle" cx="18" cy="18" r="18" style="fill:#fff"></circle>
+              <circle class="circle" cx="18" cy="18" r="12.4" style="fill:none;stroke:#00323f;stroke-miterlimit:10;stroke-width:4px"></circle>
+              <circle class="circle" cx="18" cy="18" r="7.01" style="fill:none;stroke:#00323f;stroke-miterlimit:10"></circle>
+              <path class="star" d="M25.4,27.5L18.3,24l-7,3.9l1.2-7.9l-5.9-5.3l7.9-1.4l3.3-7.2l3.7,7l7.9,0.9l-5.6,5.7L25.4,27.5z" fill="#00323f"></path>
+            </svg>Craig Rahtz<br />
+          </a>
+          <a href="/about-craig-rahtz">Freelance Web Developer <br />Cincinnati, Ohio</a>
+        </div>
+        <div class="column column-33 footer-column-center">
+          <span class="services-header">Services:</span> <br /><a href="front-end-development-services">Front-End Development</a> <br />
+          <a href="/back-end-support-services">Back-End Support</a> <br />
+        </div>
+        <div class="column column-33 footer-column-right">Copyright &copy; {thisYear} <br /><a href="/about-this-site">About this site</a> <br /><a href="/privacy-policy">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>

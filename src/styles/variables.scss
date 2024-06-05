@@ -1,15 +1,13 @@
-    :root {
-    // names from https://chir.ag/projects/name-that-color/
-    --daintree: #01232e;
-    --hero-bkg: #041c24;
-    --cyprus: #00323f;
-    --astronaut-blue: #00455c;
-    --mintjulep: #f2e1c2; 
-    --darkjulep: #efe4cf;
-    --jaffa: #f58c47;
-    --flamingo: #f26241;
-    --flamingo-dark: #db350f;
+// names from https://chir.ag/projects/name-that-color/
+$daintree: #01232e;
+$hero-bkg: #041c24;
+$cyprus: #00323f;
+$astronaut-blue: #00455c;
+$mintjulep: #f2e1c2; 
+$darkjulep: #efe4cf;
+$jaffa: #f58c47;
+$flamingo: #f26241;
+$flamingo-dark: #db350f;
 
-    // fonts
-    --script-font-family: "cinema-script", sans-serif;
-}
+// fonts
+$script-font-family: "cinema-script", sans-serif;

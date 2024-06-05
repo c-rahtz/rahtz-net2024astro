@@ -1,0 +1,57 @@
+---
+import BasePageLayout from "../layouts/BasePageLayout.astro";
+import PageHeadline from "../components/internal-pages/PageHeadline.astro"
+import PageContactForm from "../components/internal-pages/PageContactForm.astro";
+import "../styles/components/internal-pages.scss";
+
+const pageHeadline = "Cincinnati Freelance Web Developer";
+const pageTitle = "About Freelance Web Developer, Craig Rahtz";
+const metaDescription = "Experienced freelance web developer";
+---
+<BasePageLayout pageTitle={pageTitle} metaDescription={metaDescription}>
+<main>
+    <PageHeadline headline={pageHeadline} />
+    <div class="wrap">
+      <div class="page-background-image" />
+        <div class="container row page-content top-content">
+        <div class="column content-column single-column">
+          <p>I’m Craig Rahtz, a freelance web developer focused on using next-generation tools and techniques to bring performant, accessible websites to life. With a strong, varied background in content creation, I’ve provided a range of services to clients over the years. This has given me a unique understanding of what clients want, need, and expect from their online strategy. I can help you develop and deliver effective websites that delight and inform your audience.</p>
+          <p>Skills and experience I offer:</p>
+          <p class="skill-area"><strong>Cloud Infrastructure and Hosting:</strong> AWS, DigitalOcean, SiteGround, Flywheel, GoDaddy</p>
+          <p class="skill-area"><strong><router-link to="/front-end-development-services">Front-End Development</router-link>:</strong> Vue.js, React.js, Vite, Vanilla JavaScript, jQuery, GSAP, CSS/SASS</p>
+          <p class="skill-area"><router-link to="/back-end-support-services"><strong>Back-End Development</strong>:</router-link> Apache, PHP, Node.js, REST, GraphQL</p>
+          <p class="skill-area"><strong>WordPress</strong>: custom themes, support, and development</p>
+        </div>
+      </div>
+      <div class="container row page-content">
+        <div class="column column-66 content-column">
+          <p><img class="img-float-left" alt="Portrait of Craig in an outdoor setting" src="/images/craig-rahtz-outdoors.jpg" /> I love helping clients bring new and interesting projects to life. Creativity comes in many forms, and many visionaries simply lack the technical know-how to execute their vision. I can help bridge that gap and enable you to deliver a message that works.</p>
+          <p>Although many of the projects I work on are proprietary in nature, I’m happy to share examples of specific services. Please contact me to begin exploring the ways we might be able to collaborate. At the very least, I can give you a few tips to help get you pointed in the right direction. If we do end up partnering, you can be sure I will deliver accurate, professional results. I’m also pretty easy-going and fun to work with. <router-link to="/client-testimonials">See what my clients have to say</router-link>.</p>
+        </div>
+        <div class="column column-33">
+          <PageContactForm />
+        </div>
+      </div>
+    </div>
+  </main>
+</BasePageLayout>
+
+  <style lang="scss">.top-content {
+      padding-bottom: 0;
+  }
+
+  .skill-area {
+      margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+      .img-float-left {
+          float: none;
+          display: block;
+      }
+  }
+
+  </style>
+    
+
+

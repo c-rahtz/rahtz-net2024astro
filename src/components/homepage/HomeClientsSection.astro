@@ -40,3 +40,139 @@
       </div>
     </div>
 </div>
+
+
+<style lang="scss" scoped>
+  // removing browser added quotes because they create an artificial quote inside a quote for Apple screen reader, maybe others
+  q::before,
+  q::after {
+    content: none;
+  }
+  #clients {
+    background-color: white;
+    text-align: center;
+    padding: 7rem 0 10rem;
+    // box-shadow: inset 0 5px 4px #4c4c4c26;
+    position: relative;
+    .row {
+      margin-bottom: 1rem;
+    }
+  }
+  #clients-background-image {
+    width: 100%;
+    background-color: white;
+    background-image: url(/images/clients-background-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  h2 {
+    text-transform: capitalize;
+    font-family: var(--script-font-family);
+    font-size: 5.7rem;
+    width: 100%;
+  }
+  .client-testmonial {
+    text-align: left;
+    box-shadow: 0 5px 4px #4c4c4c26;
+    border: 5px solid white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: white;
+    margin: 0 1rem 3.5rem;
+    position: relative;
+    top: 3.5rem;
+    h3 {
+      border: 3px solid white;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1rem 1rem;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      margin: -3.5rem 0 1.5rem -2rem;
+      box-shadow: 0 5px 4px #4c4c4c26;
+      max-width: 60%;
+    }
+    h3.anchor-right {
+      margin-left: 40%;
+    }
+    p {
+      margin-bottom: 1.5rem;
+    }
+    .attribution {
+      text-align: right;
+      margin-bottom: 0;
+      line-height: 2rem;
+      .business-name {
+        display: block;
+      }
+    }
+  }
+  .client-testimonial-pinegreen {
+    background-color: var(--astronaut-blue);
+    h3 {
+      border-color: var(--astronaut-blue);
+      color: var(--astronaut-blue);
+    }
+  }
+  .client-testimonial-flamingo {
+    background-color: var(--flamingo);
+    h3 {
+      border-color: var(--flamingo);
+      color: var(--flamingo);
+    }
+  }
+  .client-testimonial-jaffa {
+    background-color: var(--jaffa);
+    h3 {
+      border-color: var(--jaffa);
+      color: var(--jaffa);
+    }
+  }
+  .client-testimonial-tiber {
+    background-color: var(--daintree);
+    h3 {
+      border-color: var(--daintree);
+      color: var(--daintree);
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    #clients {
+      padding: 4rem 0 6rem;
+    }
+    h2 {
+      font-size: 4.5rem;
+      padding: 0 4%;
+      margin-bottom: 0;
+    }
+    .row .column.column-50 {
+      max-width: 100%;
+      flex: 0 0 50%;
+    }
+    .client-testmonial {
+      margin: 2rem 0;
+      h3 {
+        max-width: 100%;
+      }
+      h3.anchor-right {
+        margin-left: -2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    #clients-background-image {
+      opacity: 0;
+    }
+  }
+  </style>
+  

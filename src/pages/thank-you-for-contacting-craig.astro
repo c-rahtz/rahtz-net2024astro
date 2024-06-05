@@ -1,0 +1,30 @@
+---
+import BasePageLayout from "../layouts/BasePageLayout.astro";
+import "../styles/components/internal-pages.scss";
+import "../styles/components/contact-pages.scss"
+
+const pageTitle = "Thank You for contacting Craig"
+const metaDescription = ""
+
+---
+<BasePageLayout pageTitle={pageTitle} metaDescription={metaDescription}>
+<main>
+    <div class="wrap">
+      <div class="page-background-image" />
+      <div class="container row page-content">
+        <div class="column">
+          <div class="contact-header-image-wrapper thank-you"><img class="contact-header-image" src="/images/contact-thank-you.jpg" alt="Sunset over Northwest Cincinnati" /></div>
+          <h1>Thank You!!</h1>
+          <div class="row">
+            <div class="column">
+              <p class="in-touch thank-you">
+                Thanks for contacting me. <span class="mobile-block">I will be in touch!<sup>*</sup></span>
+              </p>
+              <p class="bot-notice"><sub>*unless you have answered the form's simple math question incorrectly. Then you might be a bot, and we can't be cool like that.</sub></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BasePageLayout>

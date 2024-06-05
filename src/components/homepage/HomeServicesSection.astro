@@ -39,3 +39,136 @@
       </div>
     </div>
 </div>
+
+
+<style lang="scss">
+  #services {
+    padding: 7rem 0 10rem;
+    background: url(/images/dust_scratches-cream.png);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 5px 4px #4c4c4c26;
+  }
+  h2 {
+    font-family: "cinema-script", "Times New Roman", "Times";
+    font-size: 5.7rem;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .container:has(.services-blurb) {
+    padding: 4rem 0;
+  }
+  .services-blurb {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 2rem;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .services-icon-wrap {
+    padding-top: 1.5rem;
+    position: relative;
+  }
+  
+  .services-icons {
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: .3rem;
+    }
+    a:hover {
+      color: var(--flamingo);
+    }
+    .tile {
+      display: flex;
+      flex: 1;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      font-weight: 700;
+      box-shadow: 0 3px 4px #4c4c4c26;
+      .tile-content {
+        padding: 1rem 0 0.5rem 2rem;
+        color: white;
+      }
+      h3 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 1.8em;
+        letter-spacing: 0.03em;
+        li::marker {
+          content: "✔  ";
+          margin-right: 3px;
+        }
+      }
+    }
+    .front-end-tile {
+      background-color: var(--astronaut-blue);
+      margin-right: 5rem;
+    }
+    .back-end-tile {
+      background-color: var(--flamingo);
+      a:hover {
+        color: var(--astronaut-blue);
+      }
+  
+    }
+  }
+  .services-background-strip {
+    position: absolute;
+    top: 6rem;
+    bottom: 6rem;
+    left: 0;
+    right: 0;
+    background-image: url(/images/code-strip-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  @media screen and (max-width: 640px) {
+    h2 {
+      font-size: 4.5rem;
+    }
+    #services {
+      padding: 4rem 0 6rem;
+    }
+    .services-blurb {
+      max-width: 32rem;
+    }
+    .tile-wrap {
+      margin-bottom: 3rem;
+    }
+    .services-background-strip {
+      display: none;
+    }
+    .services-icons {
+      flex-direction: column;
+      .tile-wrap {
+        max-width: 26rem;
+        width: 80%;
+      }
+      .tile {
+        p {
+          max-width: 16rem;
+          margin: 0 auto;
+        }
+      }
+      .front-end-tile {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  </style>
+  

@@ -1,0 +1,101 @@
+body {
+  background: #fff;
+}
+
+.wrap {
+  position: relative;
+}
+.page-background-image {
+  width: 100%;
+  background-color: white;
+  background-image: url(/images/clients-background-03.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0.75;
+  transition: opacity 0.5s;
+}
+.page-background-image-back-end {
+  width: 100%;
+  background-color: white;
+  background-image: url(/images/back-end-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0.75;
+  transition: opacity 0.5s;
+}
+.page-header {
+  padding: 5rem 0;
+  background-color: var(--mintjulep);
+}
+h1 {
+  color: white;
+  font-weight: 700;
+}
+.page-content {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.column-66.content-column {
+  padding-right: 5rem;
+}
+.img-float-left {
+  max-width: 18rem;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 4px #4c4c4c26;
+}
+main a {
+  text-decoration: underline;
+}
+.web-languages {
+  padding: 2rem 10%;
+}
+// removing browser added quotes because they create an artificial quote inside a quote for Apple screen reader, maybe others
+q::before,
+q::after {
+  content: none;
+}
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 4rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 840px) {
+  .row {
+    flex-direction: column;
+  }
+  .row .column.column-66,
+  .row .column.column-67,
+  .row .column.column-33,
+  .row .column.column-34,
+  .row .column.single-column {
+    flex: 0 0 90%;
+    max-width: 90%;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .page-background-image,
+  .page-background-image-back-end {
+    opacity: 0;
+  }
+}

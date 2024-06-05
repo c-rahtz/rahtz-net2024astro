@@ -1,0 +1,27 @@
+---
+import SiteContactForm from "../site/SiteContactForm.astro"
+---
+
+<h2>Get in touch.</h2>
+<div class="page-contact-form">
+    <SiteContactForm />
+</div>
+
+<style lang="scss">
+    h2 {
+        font-family: var(--script-font-family);
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .page-contact-form {
+        background-color: var(--flamingo);
+        padding: 1rem;
+        border-radius: 0.8rem;
+    }
+
+    form {
+        color: white;
+        margin-bottom: 0;
+    }
+</style>

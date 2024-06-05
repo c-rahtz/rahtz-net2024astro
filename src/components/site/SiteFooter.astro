@@ -24,3 +24,82 @@ const thisYear = new Date().getFullYear()
       </div>
     </div>
   </footer>
+
+
+
+<style lang="scss">
+  #site-footer {
+    padding: 5rem 0;
+    box-shadow: inset 0 5px 4px #4c4c4c26;
+    background: var(--cyprus);
+    color: white;
+  }
+  a {
+    color: var(--jaffa);
+  }
+  a:hover {
+    color: white;
+  }
+  a.footer-column-header {
+    color: white;
+  }
+  .footer-column-center {
+    text-align: center;
+  }
+  .footer-column-right {
+    text-align: right;
+  }
+  .services-header {
+    font-weight: 600;
+  }
+  
+  #footer-name {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    #svg-circles-footer {
+      width: 1.5rem;
+      margin-right: 0.4rem;
+      .circle {
+        transition: 1s all;
+      }
+  
+      .star {
+        transform-origin: center;
+        transition: 0.7s all;
+        transform: scale(0) translate(100%, 100%) rotateZ(0);
+      }
+    }
+    &:hover,
+    &:focus {
+      #svg-circles-footer {
+        .circle {
+          r: 16px;
+        }
+  
+        .star {
+          transform: scale(1) translate(0, 0) rotateZ(360deg);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #site-footer {
+      padding: 4rem 0;
+    }
+    .row .column.column-33,
+    .row .column.column-34 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .footer-column-center {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .footer-column-right {
+      border-top: 1px solid var(--mintjulep);
+      padding-top: 2rem;
+    }
+  }
+  </style>
+  

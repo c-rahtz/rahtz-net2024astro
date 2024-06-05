@@ -1,0 +1,70 @@
+---
+
+const {headline} = Astro.props;
+---
+
+<header>
+    <div class="nav-edge">
+      <div class="nav-edge-corner"></div>
+    </div>
+    <div class="page-header">
+      <div class="container row header-container-row">
+        <div class="column">
+          <h1>{ headline }</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <style lang="scss">
+    .nav-edge {
+      height: 0.8rem;
+      background-color: var(--cyprus);
+      position: relative;
+    }
+    .nav-edge-corner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.8rem 0 0 0.8rem;
+      border-color: transparent transparent transparent white;
+    }
+    .page-header {
+      padding: 4rem 0;
+      background-color: white;
+      box-shadow: 0 5px 0 #4c4c4c26;
+      position: relative;
+      z-index: 10;
+    }
+    
+    h1 {
+      color: var(--astronaut-blue);
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 840px) {
+      .header-container-row {
+        padding: 0;
+        .column {
+          flex: 0 0 90%;
+          max-width: 90%;
+          padding: 0 5%;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      h1 {
+        font-size: 3rem;
+        // text-align: center;
+        letter-spacing: 0.2px;
+      }
+    }
+    </style>

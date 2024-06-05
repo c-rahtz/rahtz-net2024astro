@@ -1,0 +1,83 @@
+---
+
+---
+
+<form id="contactForm" action="https://fieldgoal.io/f/imhvHE" method="POST" name="contact-craig">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required />
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required />
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="10" required></textarea>
+    <label for="validation" class="show-for-sr">Please enter answer to math problem: 7 + 12</label>
+    <input type="text" class="last-input" placeholder="What is 7 + 12?" name="validation" id="validation" value="" />
+    <sub>*all fields required</sub>
+    <div class="clearfix"><input id="formSend" class="float-right" type="submit" value="Send" /></div>
+</form>
+
+<script>
+
+    const checkValidation = (e) => {
+      e.preventDefault();
+      var validation = document.forms["contact-craig"]["validation"].value
+      if (validation == 19) {
+        console.log("validated: ", validation);
+        // e.target.submit()
+      } else {
+        console.log("forward to thank you page");
+        // window.location.href = "/thank-you-for-contacting-craig"
+      }
+    }
+
+    document.getElementById("contactForm").addEventListener('submit',(e)=>checkValidation(e))
+
+</script>
+
+
+<style lang="scss">
+    form {
+        color: white;
+        margin-bottom: 0;
+
+        .last-input {
+            margin-bottom: 1rem;
+        }
+
+        sub {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        font-size: 2rem;
+        height: 3.4rem;
+        line-height: 3.4rem;
+        transition: 0.35s;
+        text-transform: initial;
+        font-family: var(--script-font-family);
+        letter-spacing: 0.3rem;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+        background-color: white;
+        color: var(--flamingo);
+        border-color: transparent;
+    }
+
+    .close-height {
+        position: absolute;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+        background: transparent;
+    }
+</style>

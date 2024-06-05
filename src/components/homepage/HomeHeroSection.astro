@@ -7,7 +7,7 @@
     <div class="hero-content">
       <div class="container row name-row">
         <div class="column">
-          <p class="name-title">Craig Rahtz</p>
+          <p class="name-title">Craig Astro</p>
           <h2 class="hero-tagline">Freelance Web Developer</h2>
           <p class="hero-services-blurb">I have been providing custom web development and support services for over 15 years. Based in Cincinnati, OH and working with clients across the country, I've helped businesses and organizations, large and small, build and strengthen their presence on the web. If you're looking for an experienced web developer, <router-link to="/contact-craig" class="mobile-block">I'd love to hear from you.</router-link></p>
         </div>
@@ -15,3 +15,97 @@
     </div>
   <div class="hero-border-bottom"></div>
 </section>
+
+<style lang="scss">
+  #hero-section {
+    background: var(--hero-bkg);
+    color: var(--mintjulep);
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 5px 4px #4c4c4c30;
+  }
+  #hero-background-image {
+    width: 100%;
+    background-color: var(--hero-bkg);
+    background-image: url(/images/hero-bkg-abstract.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+  }
+  .name-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5.7rem;
+    text-shadow: 0px 3px 2px var(--cyprus);
+    margin-bottom: 0.8rem;
+    line-height: 1.25;
+  }
+  .hero-tagline {
+    font-size: 3.8rem;
+    color: white;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+  }
+  .hero-services-blurb {
+    font-size: 1.8rem;
+    color: white;
+    a {
+      color: var(--flamingo);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: var(--mintjulep);
+    }
+  }
+  .hero-comment {
+    background-color: #061626;
+    color: #fff72a;
+    padding: .5rem 1rem;
+  }
+  .hero-content {
+    padding: 8rem 0 10rem;
+    .column {
+      border: 3px solid white;
+      padding: 4rem;
+      border-radius: 1.5rem;
+      background-color: #13455ccc;
+    }
+  }
+  .hero-border-bottom {
+    height: 2rem;
+    background-color: var(--flamingo);
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .name-row{
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .name-title {
+      text-align: center;
+    }
+    .server-light {
+      display: none;
+    }
+    .hero-content {
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+      .column {
+        padding: 2rem;
+      }
+    }
+    .hero-tagline {
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+  }
+  </style>

@@ -1,18 +1,25 @@
 ---
-import { getPageBySlug } from '../../lib/wp-api';
-const page = await getPageBySlug('home');
+// import { getPageBySlug } from '../../lib/wp-api';
+// const page = await getPageBySlug('home');
+import { getPageContent } from '../../lib/directus-graphql';
+const pageContent = await getPageContent();
+// const testString = '<p class="name-title">Craig Astro</p>';
+// console.log(pageContent);
+// console.log(testString);
+
 ---
 
 <section id="hero-section">
   <div id="hero-background-image"></div>
     <div class="hero-content">
       <div class="container row name-row">
-        <div class="column" set:html={page.content}>
+        <div class="column" set:html={pageContent}>
           <!-- <p class="name-title">Craig Astro</p> -->
           <!-- <p>{result.title}</p> -->
           <!-- <h2 class="hero-tagline">Freelance Web Developer</h2> -->
           <!-- <p class="hero-services-blurb">I have been providing custom web development and support services for over 15 years. Based in Cincinnati, OH and working with clients across the country, I've helped businesses and organizations, large and small, build and strengthen their presence on the web. If you're looking for an experienced web developer, <router-link to="/contact-craig" class="mobile-block">I'd love to hear from you.</router-link></p> -->
         </div>
+
       </div>
     </div>
   <div class="hero-border-bottom"></div>

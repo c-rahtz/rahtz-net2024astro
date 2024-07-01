@@ -5,14 +5,14 @@ import PageContactForm from "../components/internal-pages/PageContactForm.astro"
 import "../styles/components/internal-pages.scss";
 
 import { getPageData } from '../lib/directus-graphql';
-const pageData = await getPageData(2);
+const pageData = await getPageData(4);
 ---
 
 <BasePageLayout pageTitle={pageData.page_title} metaDescription={pageData.meta_description}>
   <main>
     <PageHeadline headline={pageData.page_headline} />
     <div class="wrap">
-      <div class="page-background-image" />
+      <div class="page-background-image-back-end" />
       <div class="container row page-content">
         <div class="column column-66 content-column" set:html={pageData.content}></div>
         <div class="column column-33" id="contact-craig">
@@ -22,36 +22,3 @@ const pageData = await getPageData(2);
     </div>
   </main>
 </BasePageLayout>
-
-
-<style lang="scss">
-
-.service-block {
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    p {
-        margin-bottom: 4rem;
-    }
-}
-
-.services-link {
-    text-transform: capitalize;
-    font-size: 3.2rem;
-    
-    a {
-        // text-decoration: none;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .service-block {
-        h2 {
-            margin-bottom: 1.5rem;
-        }
-    }
-}
-
-</style>
-    

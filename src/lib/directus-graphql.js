@@ -1,5 +1,4 @@
 const API_URL = import.meta.env.RAHTZNET_CMS;
-const WS_URL = import.meta.env.RAHTZNET_DIRECTUS_GRAPHQL_RAW;
 const API_TOKEN = import.meta.env.RAHTZNET_FRONTEND_TOKEN;
 /*
 const response = await fetch(API_URL, {

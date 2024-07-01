@@ -1,18 +1,6 @@
 const API_URL = import.meta.env.RAHTZNET_CMS;
 const WS_URL = import.meta.env.RAHTZNET_DIRECTUS_GRAPHQL_RAW;
 const API_TOKEN = import.meta.env.RAHTZNET_FRONTEND_TOKEN;
-// const socketURL = 'ws://' + WS_URL; // + API_URL;
-
-// import { WebSocketServer } from 'ws';
-// import { createClient } from 'graphql-ws';
-
-// const client = createClient({
-// 	url: {socketURL},
-// 	keepAlive: 30000,
-//     connectionParams: async () => {
-// 		return { access_token: {API_TOKEN} };
-// 	},
-// });
 /*
 const response = await fetch(API_URL, {
     method: "POST",
